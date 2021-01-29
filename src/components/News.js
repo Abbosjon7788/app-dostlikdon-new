@@ -10,7 +10,7 @@ import {
     CARD_2_SRC,
     CARD_2_TITLE, CARD_3_DESCRIPTION, CARD_3_SRC, CARD_3_TITLE
 } from "../tools/constants";
-
+import {getText} from "../locales";
 
 class News extends Component {
     render() {
@@ -32,7 +32,7 @@ class News extends Component {
                     <div className="container">
 
                         <div className="row pb-5">
-                            <h3 className="news w-100">Yangiliklar</h3>
+                            <h3 className="news w-100">{getText("news")}</h3>
                             <Slider {...settings}>
 
                                 <div className='mx-15'>

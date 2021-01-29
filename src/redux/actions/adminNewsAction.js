@@ -49,6 +49,8 @@ export function getNews(){
         axios.get(API_PATH + "news")
             .then(res => {
                 dispatch(updateState({news: res.data.data}));
+                dispatch({type: "CHANGE_LOADING", payload: {pageLoading: false}})
+
             })
     }
 }
@@ -70,18 +72,26 @@ export function deleteNews(id){
 
 export function getNewsByMenu(url){
     return function (dispatch){
+        dispatch({type: "CHANGE_LOADING", payload: {pageLoading: true}})
         axios.get(API_PATH + "news/byMenu/" + url)
             .then(res => {
                 dispatch(updateState({newsByMenu: res.data.data}));
+                dispatch({type: "CHANGE_LOADING", payload: {pageLoading: false}})
             })
     }
 }
 
 export function getOneNews(url){
     return function (dispatch) {
+        dispatch({type: "CHANGE_LOADING", payload: {pageLoading: true}})
+
         axios.get(API_PATH + "news/" + url)
             .then(res => {
                 dispatch(updateState({oneNews: res.data.data}));
+                dispatch({type: "CHANGE_LOADING", payload: {pageLoading: false}})
             })
     }
 }
+
+
+//"news/getLast"

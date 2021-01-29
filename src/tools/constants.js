@@ -1,9 +1,9 @@
 
 
 
-export const API_PATH = "http://10.10.11.66:81/api/";
+export const API_PATH = "https://app-dostlik.herokuapp.com/api/";
 export const TOKEN_NAME = "dostlik-don-token";
-
+export const SITE_LANG = "language"
 
 
 

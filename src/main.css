@@ -13,6 +13,24 @@
 .m-top-3 {
   margin-top: 3px; }
 
+.photo-object-fit{
+  height: 222px;
+  object-fit: contain;
+}
+
+.page-loader{
+  z-index: 999999999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section#footer_part {
   background-color: #5E5E5E;
   color: white;
@@ -633,4 +651,19 @@ section#information-description .comments .user-info .like .icons.icon-open-hear
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 2000px) {
+  #carousel-part {
+    width: 1700px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 576px){
+  #complaint .d-flex{
+    flex-direction: column;
+    align-items: flex-start!important;
+  }
 }

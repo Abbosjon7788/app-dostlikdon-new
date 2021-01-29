@@ -4,6 +4,7 @@ import NavbarPart from "../components/NavbarPart";
 import InformationBody from "../components/InformationBody";
 import News from "../components/News";
 import FooterPart from "../components/FooterPart";
+import '../main.css';
 
 class Information extends Component {
     render() {

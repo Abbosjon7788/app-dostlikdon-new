@@ -28,7 +28,7 @@ class CategoryPage extends Component {
                     <div className="row">
                         {this.props.newsByMenu.map(item => (
                             <div className="col-4">
-                                <NewsCard url={this.props.match.params.url} newsUrl={item.url} title={item.titleUz} createdAt={item.createdAt} count={item.viewCount} description={item.descriptionUz} src={CARD_1_SRC}/>
+                                <NewsCard url={this.props.match.params.url} newsUrl={item.url} title={item.titleUz} createdAt={item.createdAt} count={item.viewCount} description={item.descriptionUz} src={item.photo}/>
                             </div>
                         ))}
                     </div>

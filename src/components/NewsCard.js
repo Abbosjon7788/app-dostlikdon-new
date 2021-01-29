@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {API_PATH} from "../tools/constants";
 const NewsCard = (props) => {
     return (
         <div>
             <section id="news-card">
-                <div className="card mb-4 border">
+                <div className="card mb-4 border mx-15">
                     <div className="card-header bg-white d-flex justify-content-center p-0 border-bottom">
-                        <img src={props.src} className="w-100" alt=""/>
+                        <img src={API_PATH + "file/get/" + props.src}  className="w-100 photo-object-fit" alt=""/>
                     </div>
                     <div className="card-body">
                         <div className="card-icons">

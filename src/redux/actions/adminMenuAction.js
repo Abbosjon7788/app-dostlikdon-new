@@ -37,6 +37,12 @@ export function getMenus(){
         axios.get(API_PATH + "menu")
             .then((res) => {
                 dispatch(updateState({menus: res.data.data}))
+                dispatch({
+                    type: "CHANGE_LOADING",
+                    payload: {
+                        pageLoading: false
+                    }
+                })
             })
     }
 }
@@ -48,6 +54,8 @@ export function getAllMenus(){
         axios.get(API_PATH + "menu/all")
             .then((res) => {
                 dispatch(updateState({menus: res.data.data}))
+                dispatch({type: "CHANGE_LOADING", payload: {pageLoading: false}})
+
             })
     }
 }

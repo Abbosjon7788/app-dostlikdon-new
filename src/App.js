@@ -10,8 +10,10 @@ import NotFound from "./components/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
 import CategoryPage from "./pages/CategoryPage";
 import Information from "./pages/Information";
+import {connect} from 'react-redux';
+import {RingLoader} from 'react-spinners';
 
-function App() {
+function App(props) {
   return (
     <div>
         <BrowserRouter>
@@ -31,8 +33,24 @@ function App() {
         </BrowserRouter>
         <ToastContainer/>
 
+
+        {/*{props.pageLoading ?*/}
+        {/*    <div className="page-loader">*/}
+        {/*        <RingLoader*/}
+        {/*            loading={props.pageLoading}*/}
+        {/*            color="#008F48"*/}
+        {/*        />*/}
+        {/*    </div> : ""*/}
+        {/*}*/}
+
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        pageLoading: state.app.pageLoading
+    }
+}
+
+export default connect(mapStateToProps, {})(App);
