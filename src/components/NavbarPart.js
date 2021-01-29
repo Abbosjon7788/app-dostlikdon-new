@@ -13,7 +13,7 @@ class NavbarPart extends Component {
         return (
             <div>
                 <section id="navbar-part">
-                    <div className="container my-3">
+                    <div className="container py-3">
                         <div className="row">
                             <ul className="nav w-100">
                                 <li className="nav-item mr-4">
@@ -32,7 +32,7 @@ class NavbarPart extends Component {
                                                     <tbody>
                                                     {item.submenus.map(item2 => (
                                                         <tr>
-                                                            <td><Link to={"/category/" + item2.url}>{item2.nameUz}</Link></td>
+                                                            <td><Link className="text-decoration-none text-white" to={"/category/" + item2.url}>{item2.nameUz}</Link></td>
                                                         </tr>
                                                     ))}
 

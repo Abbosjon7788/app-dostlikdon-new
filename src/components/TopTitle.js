@@ -27,7 +27,7 @@ class TopTitle extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <div className="phone-number py-2 px-4 d-flex align-items-center cursor-pointer">
-                                        <FaPhoneAlt color="#008F48" className="mr-2"/>
+                                        <FaPhoneAlt className="mr-2 phone-color"/>
                                         <span>99872 335-41-16</span>
                                     </div>
                                 </li>

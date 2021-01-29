@@ -1,6 +1,18 @@
 .body-bg-color {
   background-color: #fafafa; }
 
+.mt-30 {
+  margin-top: 30px; }
+
+.color-grey {
+  color: #bfbfbf; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.m-top-3 {
+  margin-top: 3px; }
+
 section#footer_part {
   background-color: #5E5E5E;
   color: white;
@@ -53,7 +65,9 @@ section#top-title .container .row .nav .nav-item .phone-number .phone-color {
 
 section#navbar-part {
   background-color: white;
-  font-family: Inter, sans-serif; }
+  font-family: Inter, sans-serif;
+  box-shadow: 0 2px 2px rgba(204, 204, 204, 0.51);
+  border-radius: 5px; }
 section#navbar-part .container .row .cursor-pointer {
   cursor: pointer; }
 section#navbar-part .container .row .nav .nav-item {
@@ -432,6 +446,177 @@ section#media .container .tab-content .tab-pane .row .col-4 .card .card-body .bt
   color: #008F48;
   font-size: 18px;
   font-weight: 500; }
+
+section#information-complaints {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  cursor: pointer; }
+section#information-complaints:hover {
+  box-shadow: 0 5px 15px #D2D2D2; }
+section#information-complaints .complaint-title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #0D374B; }
+section#information-complaints img {
+  margin-top: 36px;
+  margin-bottom: 22px; }
+section#information-complaints .interactive-service {
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  color: black;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center; }
+
+section#information-media {
+  padding: 35px;
+  background-color: white;
+  border-radius: 10px; }
+section#information-media .information-media-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: black;
+  font-family: Inter, sans-serif; }
+section#information-media .galery {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #F0EDED; }
+section#information-media .galery:hover {
+  cursor: pointer; }
+section#information-media .galery:hover .date .icons {
+  background-color: #808080; }
+section#information-media .galery:hover .date .color-grey {
+  color: #808080; }
+section#information-media .galery:hover .galery-text {
+  color: #008F48; }
+section#information-media .galery .date {
+  display: flex;
+  align-items: center; }
+section#information-media .galery .date .icons {
+  width: 20px;
+  height: 20px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #bfbfbf; }
+section#information-media .galery .date .icons.icon-calendar {
+  mask-image: url("./images/calendar.png");
+  -webkit-mask-image: url("./images/calendar.png"); }
+section#information-media .galery .galery-text {
+  color: black;
+  opacity: 0.7;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 16px; }
+
+section#information-description {
+  background-color: white;
+  border-radius: 10px;
+  padding: 35px; }
+section#information-description .info-icons {
+  display: flex;
+  align-items: center; }
+section#information-description .info-icons .color-grey {
+  color: #808080; }
+section#information-description .info-icons .icons {
+  width: 20px;
+  height: 20px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #808080; }
+section#information-description .info-icons .icons.icon-calendar {
+  mask-image: url("./images/calendar.png");
+  -webkit-mask-image: url("./images/calendar.png"); }
+section#information-description .info-icons .icons.icon-views {
+  mask-image: url("./images/views.png");
+  -webkit-mask-image: url("./images/views.png"); }
+section#information-description .info-icons .icons.icon-message {
+  mask-image: url("./images/message.png");
+  -webkit-mask-image: url("./images/message.png"); }
+section#information-description .info-description-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 25px;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+section#information-description .info-content-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  color: black;
+  opacity: 0.8;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #F0EDED;
+  margin-bottom: 45px; }
+section#information-description .comments-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; }
+section#information-description .comments-title .text-name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px; }
+section#information-description .comments-title .opinion-number {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500; }
+section#information-description .comment-area {
+  display: flex; }
+section#information-description .comment-area img {
+  margin-right: 30px; }
+section#information-description .comment-area textarea {
+  border-color: #D7D7D7;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 20px; }
+section#information-description .comments {
+  display: flex;
+  margin-top: 40px; }
+section#information-description .comments img {
+  margin-right: 26px; }
+section#information-description .comments .user-info .name {
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  margin-bottom: 5px; }
+section#information-description .comments .user-info .comment-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 5px; }
+section#information-description .comments .user-info .like {
+  display: flex;
+  align-items: center;
+  font-size: 14px; }
+section#information-description .comments .user-info .like .icons {
+  width: 13px;
+  height: 13px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #808080; }
+section#information-description .comments .user-info .like .icons.icon-open-heart {
+  mask-image: url("./images/open-heart.png");
+  -webkit-mask-image: url("./images/open-heart.png"); }
+
+/*# sourceMappingURL=main.css.map */
+
 
 /*# sourceMappingURL=main.css.map */
 

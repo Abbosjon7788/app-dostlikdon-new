@@ -35,18 +35,18 @@ class News extends Component {
                             <h3 className="news w-100">Yangiliklar</h3>
                             <Slider {...settings}>
 
-                                <>
+                                <div className='mx-15'>
                                     <NewsCard title={CARD_1_TITLE} description={CARD_1_DESCRIPTION} src={CARD_1_SRC}/>
-                                </>
-                                <>
+                                </div>
+                                <div className='mx-15'>
                                     <NewsCard title={CARD_2_TITLE} description={CARD_2_DESCRIPTION} src={CARD_2_SRC}/>
-                                </>
-                                <>
+                                </div>
+                                <div className='mx-15'>
                                     <NewsCard title={CARD_3_TITLE} description={CARD_3_DESCRIPTION} src={CARD_3_SRC}/>
-                                </>
-                                <>
+                                </div>
+                                <div className='mx-15'>
                                     <NewsCard title={CARD_2_TITLE} description={CARD_2_DESCRIPTION} src={CARD_2_SRC}/>
-                                </>
+                                </div>
 
 
 

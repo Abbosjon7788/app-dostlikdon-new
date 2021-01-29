@@ -41,6 +41,8 @@ export function getMenus(){
     }
 }
 
+
+
 export function getAllMenus(){
     return function (dispatch){
         axios.get(API_PATH + "menu/all")
@@ -61,6 +63,15 @@ export function deleteMenu(id){
                 } else {
                     toast.error("Xatolik!");
                 }
+            })
+    }
+}
+
+export function getSubMenus(){
+    return function (dispatch) {
+        axios.get(API_PATH + "menu/subMenus")
+            .then((res) => {
+                dispatch(updateState({subMenus: res.data.data}))
             })
     }
 }
